@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name filament-clock)(type Legacy)(uri ${KIPRJMOD}/filament-clock.lib)(options "")(descr ""))
+)
