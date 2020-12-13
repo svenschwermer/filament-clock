@@ -3,3 +3,5 @@
 *.sch-bak
 fp-info-cache
 gerber/
+*.elf
+*.o
