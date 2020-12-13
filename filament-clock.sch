@@ -289,7 +289,7 @@ Wire Wire Line
 Connection ~ 6800 3400
 Wire Wire Line
 	6800 1700 6800 1600
-Text GLabel 6200 2300 0    50   Input ~ 0
+Text GLabel 6200 2300 0    50   BiDi ~ 0
 SCL
 Text GLabel 6200 2400 0    50   BiDi ~ 0
 SDA
@@ -353,7 +353,7 @@ Wire Wire Line
 	8400 5300 8200 5300
 Wire Wire Line
 	8200 5300 8200 5200
-Text GLabel 8400 4500 0    50   Input ~ 0
+Text GLabel 8400 4500 0    50   BiDi ~ 0
 SCL
 Wire Wire Line
 	8500 4500 8400 4500
@@ -487,40 +487,38 @@ F 3 "~" H 1750 3950 50  0001 C CNN
 	1    1750 3950
 	0    -1   -1   0   
 $EndComp
-Text GLabel 9700 4700 2    50   Output ~ 0
+Text GLabel 9600 4700 2    50   Output ~ 0
 RTC_INT
-Wire Wire Line
-	9700 4700 9600 4700
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J1
 U 1 1 5FBF1A45
-P 4200 4950
-F 0 "J1" H 4250 5267 50  0000 C CNN
-F 1 "UPDI" H 4250 5176 50  0000 C CNN
-F 2 "filament-clock:ConnectorMicromatch-6" H 4200 4950 50  0001 C CNN
-F 3 "~" H 4200 4950 50  0001 C CNN
-	1    4200 4950
+P 3800 3400
+F 0 "J1" H 3850 3717 50  0000 C CNN
+F 1 "UPDI" H 3850 3626 50  0000 C CNN
+F 2 "filament-clock:ConnectorMicromatch-6" H 3800 3400 50  0001 C CNN
+F 3 "~" H 3800 3400 50  0001 C CNN
+	1    3800 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 4850 4600 4850
+	4100 3300 4200 3300
 Wire Wire Line
-	4600 4850 4600 4750
+	4200 3300 4200 3200
 $Comp
 L power:GND #PWR013
 U 1 1 5FBFFA4B
-P 4600 5150
-F 0 "#PWR013" H 4600 4900 50  0001 C CNN
-F 1 "GND" H 4605 4977 50  0000 C CNN
-F 2 "" H 4600 5150 50  0001 C CNN
-F 3 "" H 4600 5150 50  0001 C CNN
-	1    4600 5150
+P 4200 3600
+F 0 "#PWR013" H 4200 3350 50  0001 C CNN
+F 1 "GND" H 4205 3427 50  0000 C CNN
+F 2 "" H 4200 3600 50  0001 C CNN
+F 3 "" H 4200 3600 50  0001 C CNN
+	1    4200 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 5050 4600 5050
+	4100 3500 4200 3500
 Wire Wire Line
-	4600 5050 4600 5150
+	4200 3500 4200 3600
 $Comp
 L power:+12V #PWR01
 U 1 1 5FC094F7
@@ -535,52 +533,52 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5FC27D43
-P 5650 4800
-F 0 "J2" H 5800 4800 50  0000 C CNN
-F 1 "Chain" H 6000 4700 50  0000 C CNN
-F 2 "filament-clock:ConnectorMicromatch-4" H 5650 4800 50  0001 C CNN
-F 3 "~" H 5650 4800 50  0001 C CNN
-	1    5650 4800
+P 10050 5900
+F 0 "J2" H 10200 5900 50  0000 C CNN
+F 1 "Chain" H 10400 5800 50  0000 C CNN
+F 2 "filament-clock:ConnectorMicromatch-4" H 10050 5900 50  0001 C CNN
+F 3 "~" H 10050 5900 50  0001 C CNN
+	1    10050 5900
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 5000 5950 5000
+	10250 6100 10350 6100
 $Comp
 L power:+12V #PWR014
 U 1 1 5FC607E7
-P 5950 4600
-F 0 "#PWR014" H 5950 4450 50  0001 C CNN
-F 1 "+12V" H 5800 4700 50  0000 C CNN
-F 2 "" H 5950 4600 50  0001 C CNN
-F 3 "" H 5950 4600 50  0001 C CNN
-	1    5950 4600
+P 10350 5700
+F 0 "#PWR014" H 10350 5550 50  0001 C CNN
+F 1 "+12V" H 10200 5800 50  0000 C CNN
+F 2 "" H 10350 5700 50  0001 C CNN
+F 3 "" H 10350 5700 50  0001 C CNN
+	1    10350 5700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 4700 5950 4600
+	10350 5800 10350 5700
 Wire Wire Line
-	5950 4700 5850 4700
+	10350 5800 10250 5800
 $Comp
 L power:GND #PWR015
 U 1 1 5FC67B4B
-P 5950 5100
-F 0 "#PWR015" H 5950 4850 50  0001 C CNN
-F 1 "GND" H 5955 4927 50  0000 C CNN
-F 2 "" H 5950 5100 50  0001 C CNN
-F 3 "" H 5950 5100 50  0001 C CNN
-	1    5950 5100
+P 10350 6200
+F 0 "#PWR015" H 10350 5950 50  0001 C CNN
+F 1 "GND" H 10355 6027 50  0000 C CNN
+F 2 "" H 10350 6200 50  0001 C CNN
+F 3 "" H 10350 6200 50  0001 C CNN
+	1    10350 6200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 5100 5950 5000
-Text GLabel 6250 4900 2    50   BiDi ~ 0
+	10350 6200 10350 6100
+Text GLabel 10650 6000 2    50   BiDi ~ 0
 SDA
-Text GLabel 6250 4800 2    50   Input ~ 0
+Text GLabel 10650 5900 2    50   BiDi ~ 0
 SCL
 Wire Wire Line
-	6250 4800 6150 4800
+	10650 5900 10550 5900
 Wire Wire Line
-	6050 4900 5850 4900
+	10450 6000 10250 6000
 $Comp
 L Regulator_Switching:AP63203WU U2
 U 1 1 5FCC2180
@@ -742,12 +740,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR012
 U 1 1 5FE75382
-P 4600 4750
-F 0 "#PWR012" H 4600 4600 50  0001 C CNN
-F 1 "+3.3V" H 4615 4923 50  0000 C CNN
-F 2 "" H 4600 4750 50  0001 C CNN
-F 3 "" H 4600 4750 50  0001 C CNN
-	1    4600 4750
+P 4200 3200
+F 0 "#PWR012" H 4200 3050 50  0001 C CNN
+F 1 "+3.3V" H 4215 3373 50  0000 C CNN
+F 2 "" H 4200 3200 50  0001 C CNN
+F 3 "" H 4200 3200 50  0001 C CNN
+	1    4200 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -810,9 +808,9 @@ Wire Wire Line
 	5700 3400 6200 3400
 Connection ~ 5700 3400
 Connection ~ 6200 3400
-Text GLabel 2700 4750 2    50   Input ~ 0
+Text GLabel 3300 4850 2    50   Input ~ 0
 RTC_INT
-Text GLabel 3100 4650 2    50   Output ~ 0
+Text GLabel 3100 4650 2    50   BiDi ~ 0
 SCL
 Text GLabel 3100 4550 2    50   BiDi ~ 0
 SDA
@@ -876,8 +874,6 @@ $EndComp
 Wire Wire Line
 	2000 5650 2000 5550
 Wire Wire Line
-	2700 4750 2600 4750
-Wire Wire Line
 	2600 4850 3200 4850
 Wire Wire Line
 	3200 4850 3200 5050
@@ -896,16 +892,14 @@ Wire Wire Line
 $Comp
 L Device:R R6
 U 1 1 5FAF17A6
-P 3800 5300
-F 0 "R6" H 3870 5346 50  0000 L CNN
-F 1 "5k" H 3870 5255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3730 5300 50  0001 C CNN
-F 3 "~" H 3800 5300 50  0001 C CNN
-	1    3800 5300
+P 4050 5000
+F 0 "R6" H 4120 5046 50  0000 L CNN
+F 1 "5k" H 4120 4955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3980 5000 50  0001 C CNN
+F 3 "~" H 4050 5000 50  0001 C CNN
+	1    4050 5000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 5150 3800 4850
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5FB0E0DE
@@ -953,42 +947,37 @@ $EndComp
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5FB1D9F7
-P 6150 4400
-F 0 "TP2" H 6208 4518 50  0000 L CNN
-F 1 "SCL" H 6208 4427 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6350 4400 50  0001 C CNN
-F 3 "~" H 6350 4400 50  0001 C CNN
-	1    6150 4400
+P 10550 5500
+F 0 "TP2" H 10608 5618 50  0000 L CNN
+F 1 "SCL" H 10608 5527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10750 5500 50  0001 C CNN
+F 3 "~" H 10750 5500 50  0001 C CNN
+	1    10550 5500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5FB27C31
-P 6050 4400
-F 0 "TP1" H 6108 4518 50  0000 L CNN
-F 1 "SDA" H 6108 4427 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6250 4400 50  0001 C CNN
-F 3 "~" H 6250 4400 50  0001 C CNN
-	1    6050 4400
+P 10450 5500
+F 0 "TP1" H 10508 5618 50  0000 L CNN
+F 1 "SDA" H 10508 5527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10650 5500 50  0001 C CNN
+F 3 "~" H 10650 5500 50  0001 C CNN
+	1    10450 5500
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5FB5F835
-P 9600 4600
-F 0 "TP3" H 9658 4718 50  0000 L CNN
-F 1 "RTC_INT" H 9658 4627 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 9800 4600 50  0001 C CNN
-F 3 "~" H 9800 4600 50  0001 C CNN
-	1    9600 4600
+P 4050 4650
+F 0 "TP3" H 3992 4768 50  0000 R CNN
+F 1 "RTC_INT" H 3992 4677 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 4250 4650 50  0001 C CNN
+F 3 "~" H 4250 4650 50  0001 C CNN
+	1    4050 4650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9600 4700 9600 4600
-Connection ~ 9600 4700
-Wire Wire Line
-	9600 4700 9500 4700
-Text GLabel 5900 5850 1    50   Input ~ 0
+Text GLabel 5900 5850 1    50   BiDi ~ 0
 SCL
 Text GLabel 6250 5850 1    50   BiDi ~ 0
 SDA
@@ -1025,72 +1014,58 @@ Wire Wire Line
 $Comp
 L filament-clock:apds-9006 U5
 U 1 1 5FCF7115
-P 4200 4250
-F 0 "U5" H 3970 4253 50  0000 R CNN
-F 1 "apds-9006" H 3970 4162 50  0000 R CNN
-F 2 "filament-clock:chipled-4" H 4200 4150 50  0001 C CNN
-F 3 "" H 4200 4150 50  0001 C CNN
-	1    4200 4250
+P 4450 4550
+F 0 "U5" H 4220 4553 50  0000 R CNN
+F 1 "apds-9006" H 4220 4462 50  0000 R CNN
+F 2 "filament-clock:chipled-4" H 4450 4450 50  0001 C CNN
+F 3 "" H 4450 4450 50  0001 C CNN
+	1    4450 4550
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 4450 3800 4450
-Wire Wire Line
-	3800 5550 3300 5550
-Wire Wire Line
-	3800 5450 3800 5550
+	4050 5150 4050 5250
 Connection ~ 3200 5550
 Wire Wire Line
-	2600 4450 3800 4450
-Connection ~ 3800 4450
+	4500 4250 4500 4350
 Wire Wire Line
-	3000 3950 4150 3950
+	4400 4350 4400 4250
 Wire Wire Line
-	4250 3950 4250 4050
-Connection ~ 3000 3950
-Wire Wire Line
-	4150 4050 4150 3950
-Connection ~ 4150 3950
-Wire Wire Line
-	4150 3950 4250 3950
+	4400 4250 4500 4250
 $Comp
 L Device:C C8
 U 1 1 5FD8FD73
-P 4500 3950
-F 0 "C8" V 4752 3950 50  0000 C CNN
-F 1 "100n" V 4661 3950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4538 3800 50  0001 C CNN
-F 3 "~" H 4500 3950 50  0001 C CNN
-	1    4500 3950
+P 4750 4250
+F 0 "C8" V 5002 4250 50  0000 C CNN
+F 1 "100n" V 4911 4250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4788 4100 50  0001 C CNN
+F 3 "~" H 4750 4250 50  0001 C CNN
+	1    4750 4250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR021
 U 1 1 5FD907DA
-P 4750 3950
-F 0 "#PWR021" H 4750 3700 50  0001 C CNN
-F 1 "GND" V 4755 3822 50  0000 R CNN
-F 2 "" H 4750 3950 50  0001 C CNN
-F 3 "" H 4750 3950 50  0001 C CNN
-	1    4750 3950
+P 5000 4250
+F 0 "#PWR021" H 5000 4000 50  0001 C CNN
+F 1 "GND" V 5005 4122 50  0000 R CNN
+F 2 "" H 5000 4250 50  0001 C CNN
+F 3 "" H 5000 4250 50  0001 C CNN
+	1    5000 4250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4750 3950 4650 3950
+	5000 4250 4900 4250
 Wire Wire Line
-	4350 3950 4250 3950
-Connection ~ 4250 3950
+	4600 4250 4500 4250
+Connection ~ 4500 4250
 Wire Wire Line
-	4000 4850 3800 4850
-Connection ~ 3800 4850
-Wire Wire Line
-	3800 4850 3800 4450
+	3600 3300 3500 3300
 $Comp
 L Switch:SW_MEC_5E SW1
 U 1 1 5FB83DF8
 P 2700 5250
-F 0 "SW1" H 2700 5635 50  0000 C CNN
-F 1 "h" H 2700 5544 50  0000 C CNN
+F 0 "SW1" V 2654 5498 50  0000 L CNN
+F 1 "+(set)" V 2745 5498 50  0000 L CNN
 F 2 "filament-clock:pts526" H 2700 5550 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 2700 5550 50  0001 C CNN
 	1    2700 5250
@@ -1100,8 +1075,8 @@ $Comp
 L Switch:SW_MEC_5E SW2
 U 1 1 5FB84E9D
 P 3200 5250
-F 0 "SW2" H 3200 5635 50  0000 C CNN
-F 1 "m" H 3200 5544 50  0000 C CNN
+F 0 "SW2" V 3154 5498 50  0000 L CNN
+F 1 "-" V 3245 5498 50  0000 L CNN
 F 2 "filament-clock:pts526" H 3200 5550 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 3200 5550 50  0001 C CNN
 	1    3200 5250
@@ -1116,21 +1091,20 @@ Wire Wire Line
 	2800 4950 2800 5050
 Wire Wire Line
 	3300 5450 3300 5550
-Connection ~ 3300 5550
 Wire Wire Line
 	3300 5550 3200 5550
 Wire Wire Line
 	2600 4950 2800 4950
 Wire Wire Line
-	6250 4900 6050 4900
-Connection ~ 6050 4900
-Connection ~ 6150 4800
+	10650 6000 10450 6000
+Connection ~ 10450 6000
+Connection ~ 10550 5900
 Wire Wire Line
-	6150 4400 6150 4800
+	10550 5500 10550 5900
 Wire Wire Line
-	5850 4800 6150 4800
+	10250 5900 10550 5900
 Wire Wire Line
-	6050 4400 6050 4900
+	10450 5500 10450 6000
 Text Notes 5300 3550 0    50   ~ 0
 IOUT,target=(1.25V/R2)×15=4.9mA
 Wire Wire Line
@@ -1176,16 +1150,16 @@ $EndComp
 $Comp
 L Connector:TestPoint TP6
 U 1 1 5FC0B5B5
-P 3800 4350
-F 0 "TP6" H 3858 4468 50  0000 L CNN
-F 1 "ALS" H 3858 4377 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 4000 4350 50  0001 C CNN
-F 3 "~" H 4000 4350 50  0001 C CNN
-	1    3800 4350
+P 3500 3200
+F 0 "TP6" H 3558 3318 50  0000 L CNN
+F 1 "ALS" H 3558 3227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3700 3200 50  0001 C CNN
+F 3 "~" H 3700 3200 50  0001 C CNN
+	1    3500 3200
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 4450 3800 4350
+	3500 3300 3500 3200
 $Comp
 L Device:C C10
 U 1 1 5FB5DB2B
@@ -1266,4 +1240,63 @@ Wire Wire Line
 	7300 2500 8650 2500
 Wire Wire Line
 	8650 2500 8650 2400
+Text Notes 3150 3000 0    50   Italic 0
+NB: TP6 has wrong\nmarking on PCB!
+Wire Wire Line
+	4150 4750 4050 4750
+Wire Wire Line
+	4050 4750 4050 4850
+Connection ~ 4050 4750
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FE006A8
+P 4400 4150
+F 0 "#PWR?" H 4400 4000 50  0001 C CNN
+F 1 "+3.3V" H 4415 4323 50  0000 C CNN
+F 2 "" H 4400 4150 50  0001 C CNN
+F 3 "" H 4400 4150 50  0001 C CNN
+	1    4400 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4250 4400 4150
+Connection ~ 4400 4250
+Text GLabel 3100 4450 2    50   BiDi ~ 0
+UPDI
+Wire Wire Line
+	3100 4450 2600 4450
+Text GLabel 3400 3300 0    50   BiDi ~ 0
+UPDI
+Wire Wire Line
+	3400 3300 3500 3300
+Connection ~ 3500 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5FE5F377
+P 4050 5250
+F 0 "#PWR?" H 4050 5000 50  0001 C CNN
+F 1 "GND" H 4055 5077 50  0000 C CNN
+F 2 "" H 4050 5250 50  0001 C CNN
+F 3 "" H 4050 5250 50  0001 C CNN
+	1    4050 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4750 4050 4750
+Text Notes 3550 4400 0    50   Italic 0
+NB: TP3 has wrong\nmarking on PCB!
+Wire Wire Line
+	4050 4650 4050 4750
+Wire Wire Line
+	3300 4850 3200 4850
+Connection ~ 3200 4850
+NoConn ~ 3300 5050
+NoConn ~ 2700 5050
+Wire Wire Line
+	9500 4700 9600 4700
+Text Notes 2350 6000 0    50   ~ 0
+Explanation:\nAs long as we're not in *set* mode, we consider falling edges\non PA6 as RTC interrupts. In *set* mode, we disable the RTC's\ninterrupt output, allowing us to read the button presses.
+NoConn ~ 4100 3400
+NoConn ~ 3600 3500
+NoConn ~ 3600 3400
 $EndSCHEMATC
