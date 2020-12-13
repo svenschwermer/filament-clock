@@ -17,7 +17,7 @@
   (pad "" np_thru_hole oval (at 0 0.445) (size 2.7 1) (drill oval 2.7 1) (layers *.Cu *.Mask))
   (pad "" np_thru_hole oval (at 0.85 0) (size 1 1.89) (drill oval 1 1.89) (layers *.Cu *.Mask))
   (pad "" np_thru_hole oval (at -0.85 0) (size 1 1.89) (drill oval 1 1.89) (layers *.Cu *.Mask))
-  (model "${KIPRJMOD}/filament-clock.pretty/Download_STP_156120M173000 (rev1).stp"
+  (model "${KIPRJMOD}/packages3d/chipled-4.stp"
     (offset (xyz 0 0 0.28))
     (scale (xyz 1 1 1))
     (rotate (xyz 180 0 90))
