@@ -50,6 +50,8 @@ d = [b.FindModuleByReference(f'D{i}') for i in [*range(1,8)]]
 #         +-----------+
 #           D4 = d[3]
 
+# XXX: The y-positions are actually not correct,
+# it should be -l/cos(angle) for D1, etc.
 d[0].SetOrientationDegrees(0)
 d[0].SetPosition(P(l*angle_sin, -l))
 
