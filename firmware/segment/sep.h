@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#define SEP0_ADDR (0x13 << 1)
+#define SEP_ADDR(x) ((0x10+(x)) << 1)
 
 void sep_config(uint8_t addr, uint16_t brightness, uint8_t blink_addr);
 
