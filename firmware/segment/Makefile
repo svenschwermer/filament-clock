@@ -1,4 +1,4 @@
-target ?= clock.elf
+target ?= segment.elf
 src = main.c bcd.c pcf8523.c sep.c tlc59108.c twi.c
 obj = $(src:%c=%o)
 

@@ -1,4 +1,4 @@
-target ?= seg.elf
+target ?= separator.elf
 src = main.c
 obj = $(src:%c=%o)
 
