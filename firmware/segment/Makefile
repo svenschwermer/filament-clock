@@ -1,6 +1,6 @@
 target ?= segment.elf
 src = main.c bcd.c pcf8523.c sep.c tlc59108.c twi.c
-obj = $(src:%c=%o)
+obj = $(src:%c=obj/%o)
 
 CC = avr-gcc
 CFLAGS = -mmcu=attiny412 -gdwarf -Os -DF_CPU=20000000ul -std=gnu11 -Wall -Werror
@@ -11,7 +11,8 @@ $(target): $(obj)
 	$(CC) $(LDFLAGS) -o $@ $^
 	avr-objdump -P mem-usage $@
 
-%.o: %.c
+obj/%.o: %.c
+	@mkdir -p obj
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
