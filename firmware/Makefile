@@ -1,5 +1,5 @@
 target ?= clock.elf
-src = main.c pcf8523.c tlc59108.c twi.c
+src = main.c bcd.c pcf8523.c sep.c tlc59108.c twi.c
 obj = $(src:%c=%o)
 
 CC = avr-gcc

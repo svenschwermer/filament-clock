@@ -80,7 +80,8 @@ void tlc59108_digit(uint8_t addr, char dig)
         data[1] = 0x3F;
         data[2] = 0xCF;
         break;
-    case '-':
+    default:
+        // Segment: 7 (dash)
         data[2] = 0x03;
         break;
     }
