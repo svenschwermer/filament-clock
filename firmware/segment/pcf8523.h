@@ -12,7 +12,7 @@ struct pcf8523_time_regs
     uint8_t hours;
 };
 
-void pcf8523_enable_second_int(void);
+void pcf8523_init(void);
 void pcf8523_clear_second_int(void);
 void pcf8523_get_time(struct pcf8523_time_regs *r);
 

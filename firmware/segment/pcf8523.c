@@ -1,8 +1,13 @@
 #include "pcf8523.h"
 #include "twi.h"
 
-void pcf8523_enable_second_int(void)
+void pcf8523_init(void)
 {
+    // Control_3:
+    // battery switch-over function is enabled in standard mode
+    // battery low detection function is disabled
+    twi_regwr_single(PCF8523_ADDR, 0x02, 0xa0);
+
     // Control_1: enable second interrupt
     twi_regwr_single(PCF8523_ADDR, 0x00, 0x04);
 
